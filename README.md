@@ -1,25 +1,5 @@
-import random
-
-def guess_the_number():
-    number_to_guess = random.randint(1, 100)
-    attempts = 0
-    print("Welcome to the Number Guessing Game!")
-    print("I'm thinking of a number between 1 and 100.")
-
-    while True:
-        try:
-            guess = int(input("Enter your guess: "))
-            attempts += 1
-
-            if guess < number_to_guess:
-                print("Too low. Try again.")
-            elif guess > number_to_guess:
-                print("Too high. Try again.")
-            else:
-                print(f"Congratulations! You guessed it in {attempts} tries.")
-                break
-        except ValueError:
-            print("Please enter a valid integer.")
-
-# Run the game
-guess_the_number()
+The Number Guessing Game is a simple interactive game where the player tries to guess a randomly
+generated number within a specified range. The game provides feedback on whether the guess is too
+high, too low, or correct. It typically includes a limited number of attempts, adding an element of
+challenge. The game is engaging and can be easily implemented for entertainment or educational
+purposes.
